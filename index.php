@@ -12,6 +12,5 @@
     endif;
     ?>
 </main> -->
-<h1>this is the magazine theme file editor</h1>
 
 <?php get_footer(); ?>
