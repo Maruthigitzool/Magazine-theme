@@ -12,5 +12,5 @@
     endif;
     ?>
 </main> -->
-<h2>this is the magazine title</h2>
+<h3 class="all sites">this is the magazine title for </h3>
 <?php get_footer(); ?>
