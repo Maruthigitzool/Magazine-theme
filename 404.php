@@ -1,7 +1,36 @@
 <?php get_header(); ?>
 
-<h2>Oops! Page not found.</h2>
-<p>Sorry, the page you are looking for doesn’t exist.</p>
-<p><a href="<?php echo home_url(); ?>">Go back home</a></p>
 
+<div class="container-fluid p-0 position-relative apply-bottom-pattern apum-innerpage-section error-page" > 
+	<div class="theme-top-ct apply-top-pattern apply-bottom-pattern pattern-contrast"></div>
+	<main id="primary" class="apum-section position-relative section-pad pt-4">
+
+<div class="container apum-innerpage-body bg-white pt-80 pb-0 rounded h-100 text-center" 
+     style="background-image: url('/wp-content/uploads/2025/06/404error-1.png'); background-size: contain; background-position: center;">
+
+
+			<div class="maxw-720 content-area">
+
+			<h1>
+				404
+				</h1>
+				
+				<p>
+					<span><?php echo esc_html( t('aras_Page_not_found') ); ?></span>
+				</p>
+
+			<?php
+			$translated_home_url = apply_filters('wpml_home_url', home_url());
+			?>
+
+			<a href="<?php echo esc_url($translated_home_url); ?>" class="btn btn-primary btn-animate">
+				<i class="fas fa-arrow-left mt-1"></i>
+				<span><?php echo esc_html( t('aras_go_back_home') ); ?></span>
+			</a>
+
+</div>
+		</div>
+	
+	</main><!-- #primary -->
+ </div>
 <?php get_footer(); ?>
